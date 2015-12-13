@@ -1,4 +1,5 @@
 # Winston Circular buffer
+[![Build Status](https://travis-ci.org/JonathanPerkins/winston-circular-buffer.svg)](https://travis-ci.org/JonathanPerkins/winston-circular-buffer)
 
 An in-memory circular buffer logging transport for the [winston.js](https://github.com/winstonjs/winston) node.js logging system.
 

@@ -1,10 +1,10 @@
 # Winston Circular buffer
 
-An in-memory circular buffer logging transport for winston.js node.js logging system.
+An in-memory circular buffer logging transport for the [winston.js](https://github.com/winstonjs/winston) node.js logging system.
 
 This transport allows a simple most-recent view of log entries from a bounded
 circular buffer. Useful if you just want to see whats recently happened without
-worrying about memory usage, file rotation etc.
+having to manage growing memory usage, file rotation etc.
 
 ## Usage
 
@@ -59,3 +59,9 @@ npm install
 ```bash
 npm test
 ```
+
+## Author
+
+(c) Jonathan Perkins 2015.
+
+Feedback, bug reports welcome via https://github.com/JonathanPerkins/winston-circular-buffer

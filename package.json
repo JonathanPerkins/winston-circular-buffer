@@ -1,0 +1,27 @@
+{
+  "name": "winston-circular-buffer",
+  "version": "1.0.0",
+  "description": "An in-memory circular buffer logging transport for winston.js",
+  "main": "./lib/winston-circular-buffer.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "winston",
+    "circular-buffer"
+  ],
+  "author": "Jonathan Perkins",
+  "license": "MIT",
+  "dependencies": {
+    "circular-buffer": "0.0.6"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^8.0.1",
+    "winston": "^2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonathanPerkins/winston-circular-buffer.git"
+  }
+}

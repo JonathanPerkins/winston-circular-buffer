@@ -20,6 +20,7 @@ var logger = new (winston.Logger)({
         new (winston.transports.CircularBuffer)({
             name: 'circular-buffer',
             level: 'info',
+            json: true,
             size: 50
         })
     ]
@@ -31,12 +32,30 @@ Log as usual, and query the buffer:
 ```javascript
 logger.warn('my warning', { meta: 21 });
 
+var options = {
+    json: true,
+    order: 'asc'
+};
+
 logger.query(options, function(err, results) {
     // Check err, handle results array
 
 });
 ```
 
-The query options are optional(!) - none are currently defined.
+The query options are:
+* `json:` set to `true` (default) if you want the records to be json objects, `false` for strings (note that if the transport has been configured for `json: false` then you will always get strings returned).
+* `order:` set to `'desc'` (default) to produce descending order results (most recent first). Use `order: 'asc'` for ascending output.
 
-To be continued...
+
+## Install
+
+```bash
+npm install
+```
+
+## Test
+
+```bash
+npm test
+```
